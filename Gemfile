@@ -22,6 +22,8 @@ gem 'bootstrap-sass-extras', '~> 0.0.2'
 # user setup
 gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'simple_form', '~> 5.3'
+gem 'cssbundling-rails'
+
 
 
 group :development, :test do
