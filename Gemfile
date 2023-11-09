@@ -15,7 +15,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'sassc', '~> 2.4'
 
-# my added
+# MY ADDED
 
 # for styling
 gem 'bootstrap-sass-extras', '~> 0.0.2'
@@ -24,7 +24,11 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'simple_form', '~> 5.3'
 gem 'cssbundling-rails'
 
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 1.5', '>= 1.5.3'
 
+end
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
