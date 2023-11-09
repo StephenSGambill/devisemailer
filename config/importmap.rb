@@ -5,3 +5,4 @@ pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
+pin "yeti", to: "https://unpkg.com/bootstrap-v4-rtl@4.6.0/dist/css/bootstrap-rtl.min.css"
