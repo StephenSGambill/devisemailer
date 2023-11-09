@@ -22,7 +22,7 @@ gem 'bootstrap-sass-extras', '~> 0.0.2'
 # user setup
 gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'simple_form', '~> 5.3'
-gem 'cssbundling-rails'
+# gem 'cssbundling-rails'
 
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
