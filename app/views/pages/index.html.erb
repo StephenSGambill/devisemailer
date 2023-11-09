@@ -16,7 +16,7 @@
  <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
  <hr>
  <!-- Preview Image -->
- <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+ <img class="img-responsive" src="https://media.npr.org/assets/img/2014/11/06/bighero_wide-f10366d37e0095138495887ddcabeec0c7345ca3-s1400-c100.jpg" alt="">
  <hr>
  <!-- Post Content -->
  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero,
@@ -140,12 +140,15 @@ ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
  </div>
  <!-- /.row -->
  </div>
- <!-- Side Widget Well -->
 
+ <!-- Side Widget Well -->
 <div class="well">
- <h4>Side Widget Well</h4>
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci
-accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+ <h4>Recent Posts</h4>
+    <% @articles.each do | article|  %>
+        <strong><%= link_to article.title, article %></strong><br>
+        Author: <%= article.user.username %>
+        <p><em><%= truncate(article.body, length:100) %></p></em>
+    <% end %>
  </div>
  </div>
 </div>
