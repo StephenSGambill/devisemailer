@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.4"
 gem "rails", "~> 7.0.8"
 gem "sprockets-rails"
-gem "sqlite3", "~> 1.4"
+gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
@@ -26,7 +26,7 @@ gem 'simple_form', '~> 5.3'
 
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
-  gem 'pg', '~> 1.5', '>= 1.5.3'
+  # gem 'pg', '~> 1.5', '>= 1.5.3'
 
 end
 
